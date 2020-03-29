@@ -1,0 +1,111 @@
+:root{
+    --color-texto:#685642;
+    --background-color:rgba(104, 86, 66,0.7);
+}
+*{
+   scroll-behavior: smooth; 
+}
+
+
+.borde{
+padding: 0;
+border:none !important; 
+margin:0 2%;   
+}
+.borde > img{
+    border: 1px solid #f2f2f2;   
+    border-radius: 40px;
+}
+.container{
+    padding: 2% 0;
+}
+.row{
+    height: auto;
+}
+.principal{
+
+    width: 80%;
+    background-color:var(--background-color);
+    position: sticky;
+    top:0;
+    z-index: 1;
+    padding: 0 20%;
+}
+/* header > i {
+    font-size: 40px;    
+} */
+.brand{
+    width: 50px !important;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+.login{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.login > .formgroup {
+    width: 10%;
+}
+.first-banner{
+    width: 80%;
+}
+.after-footer{
+    background-color: #E3F1BA;
+}
+footer{
+    background-color: #B7C68B;
+}
+.social i{
+    font-size:40px;
+}
+.menu{
+    text-align: end;
+    font-size: 30px;
+}
+body{
+    background: url(../img/Bakery2.jpg) repeat;
+    background-size: 300px;
+}
+.brands{
+    background-color:white;
+}
+.suscripcion input{
+    border:none;
+    outline: 0;
+    background: none;
+    transition: 0.2s all ease-in-out;
+    padding: 2%;
+    width: 80%;
+}
+.suscripcion button{
+    background: none;
+    outline: 0;
+    border:none;
+    font-size: 30px;
+}
+.suscripcion input:hover, .suscripcion input:focus{
+    background:#B7C68B;
+    width: 85%;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  #E3F1BA; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B7C68B; 
+  }
