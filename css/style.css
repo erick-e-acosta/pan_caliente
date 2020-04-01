@@ -198,3 +198,44 @@ a #right{
 }
 
 /*final menu puto*/
+
+
+.modal-content{
+    border:2px solid rgba(136, 112, 85, 1) !important;
+    background:url(../img/Bakery2.jpg) center center no-repeat;
+    background-size: cover;  
+    padding: 5% 20%;
+}
+.modal-header {
+    text-align: center;
+}
+.modal-body > i {
+    
+    font-size: 40px;
+    padding: 2% 2.5%;
+    border-radius: 50%;
+    color:rgba(136, 112, 85, 1);
+    border:2px solid rgba(136, 112, 85, 1);
+}
+.modal-body input{
+    border:2px solid rgba(136, 112, 85, 1);
+    border-radius: 5px;
+    width: 100%;
+    padding: 1%;
+    margin:2% 0;
+    background:none;
+    text-align: center;
+
+}
+.enviar{
+    width: 100%;
+    background-color: #B7C68B;
+    border-radius: 5px;
+    border:2px solid rgba(136, 112, 85, 1);
+}
+.close{
+    border-radius: 50%;
+    color: rgba(136, 112, 85, 1);
+    background: white;
+
+}
