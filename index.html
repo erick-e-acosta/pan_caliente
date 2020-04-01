@@ -40,26 +40,107 @@
                     </div>
                 </form>
             </div>
-            <div class="col-2 menu"><i class="fas fa-bars"></i></div>
-
+            <div class="col-2 nav-item dropdown align-items-right">
+                    <a class="nav-link dropdown-toggle ml-5" href="#" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars" style="font-size: 30px;"></i>
+                    </a>
+                    <div class="dropdown-menu mt-3 menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+            </div>
+            
         </div>
+           
     </header>   
 </div>
     <!-- fin  menu de pagina -->
-
+    
 
     <!--contenedor categorias-->
     <div class="container">
+        
         <div class="row justify-content-center">
             <div class="col-3 borde">
-                <img src="./img/3.jpg" width="100%">
+                <img src="./img/3.jpg" width="100%" data-toggle="modal" data-target="#modalLeft">
             </div>
+
+             <!--modal category left-->
+              <!-- Modal -->
+              <div class="modal fade" id="modalLeft" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--END modal category left-->
+
             <div class="col-3 borde">
-                <img src="./img/1.jpg" width="100%">
+                <img src="./img/1.jpg" width="100%" data-toggle="modal" data-target="#modalCenter">
             </div>
+            <!--modal category CENTER-->
+              <!-- Modal -->
+              <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--END modal category CENTER-->
+
             <div class="col-3 borde">
-                <img src="./img/2.jpg" width="100%">
+                <img src="./img/2.jpg" width="100%" data-toggle="modal" data-target="#modalRight">
             </div>
+            <!--modal category RIGHT-->
+              <!-- Modal -->
+              <div class="modal fade" id="modalRight" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--END modal category RIGHT-->
         </div>
     </div>
     <!--fin contenedor categorias-->
