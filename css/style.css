@@ -216,6 +216,7 @@ a #right{
     border-radius: 50%;
     color:rgba(136, 112, 85, 1);
     border:2px solid rgba(136, 112, 85, 1);
+    margin-left: 39%;
 }
 .modal-body input{
     border:2px solid rgba(136, 112, 85, 1);
@@ -232,6 +233,7 @@ a #right{
     background-color: #B7C68B;
     border-radius: 5px;
     border:2px solid rgba(136, 112, 85, 1);
+    margin-top:20px;
 }
 .close{
     border-radius: 50%;
@@ -239,3 +241,60 @@ a #right{
     background: white;
 
 }
+/*POR SI ACASO*/
+.modal-body p{
+    margin-top:5%;
+}
+
+.modal-body .row{
+    display: inline-flex;
+    margin:20px;
+    margin-left:10%;
+}
+
+/*POR SI ACASO*/
+
+
+/*Categorias popo ups
+.col-20 img{
+    display: inline-block;
+    margin: 10px;
+    width: 200px auto;
+}
+.col-21 img{
+    display: inline-flex;
+    margin: 10px;
+}
+.col-22 img{
+    display: inline-flex;
+    margin: 10px;
+}
+.col-23 img{
+    display: inline-flex;
+    margin: 10px;
+}
+Categorias pop ups*/
+
+/*Texto de porductos*/
+.modal-body p{
+    font-size:15px;
+    text-align: center;
+}
+.modal-body i{
+    font-size:25px;
+    text-align: center;
+    color: #8DC63F;
+}
+
+/*Texto de porductos*/
+
+/*Categorias POP up brands*/
+p .brands{
+    font-size:12px;
+}
+.modal-body1 img{
+    width:40%;
+    margin-bottom:10%;
+    margin-left:30%;
+}
+/*Categorias POP up brands*/
