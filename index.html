@@ -2,513 +2,598 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="stylesheet" href="./icons/css/all.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="stylesheet" href="./icons/css/all.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- menu de pagina -->
-    <div class="container-fluid principal" >
+  <!-- menu de pagina -->
+  <div class="container-fluid principal">
     <header class="container p-3">
-    
-        <div class="row justify-content-center">
-            <div class="col-2">
-                <div class="brand">
 
-                </div>
-            </div>
-            <div class="col-5 d-flex align-items-center">
-                <form class="form-inline row align-items-center">
-                    <div class="login col-6">
-                        <input id="buttons-header" type="text"  placeholder="Comprar">
-                        <div class="input-group-prepend">
-                            <i class="fas fa-shopping-basket" style="color: white; font-size: 30px; margin-top: 3px;"></i>
-                        </div>
-                    </div>
-                    <div class="login col-6">
-                        <input id="buttons-header" placeholder="Iniciar Sesión" type="text" data-toggle="modal" data-target="#loginOne">
-                        <div class="input-group-prepend">
-                            <i class="fas fa-user" style="color: white; font-size: 30px; margin-top: 3px; font-weight: 100;"></i>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="loginOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                        <div class="modal-header justify-content-center">
-                            
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <i class="fas fa-user"></i>
-                            <form>
-                                <input type="text" placeholder="nombre">
-                                <input type="text" placeholder="nombre">
-                                <input type="text" placeholder="nombre">
-                                <input type="text" placeholder="nombre">
-                                <input type="text" placeholder="nombre">
-                                <input type="text" placeholder="nombre">
-                                <input type="text" placeholder="nombre">
-                                <button type="submit" value="send" class="enviar">Enviar</button>
-                            </form>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                <!--END modal category left-->
-                </form>
-            </div>
-            <div class="col-2 nav-item dropdown align-items-right">
-                <a class="nav-link dropdown-toggle ml-5" href="#" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-bars" style="font-size: 30px;"></i>
-                </a>
-                <div class="dropdown-menu mt-3 menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Pasteleria</a>
-                    <a class="dropdown-item" href="#">Panaderia</a>
-                    <a class="dropdown-item" href="#">Cereales</a>
-                </div>
+      <div class="row justify-content-center">
+        <div class="col-2">
+          <div class="brand">
+
+          </div>
         </div>
-        
-
-        </div>
-           
-    </header>   
-</div>
-    <!-- fin  menu de pagina -->
-    
-
-    <!--contenedor categorias-->
-    <div class="container">
-        
-        <div class="row justify-content-center">
-             <!--modal category left-->
-             <div class="col-3 borde">
-                <img src="./img/3.jpg" width="100%" data-toggle="modal" data-target="#modalLeft">
+        <div class="col-5 d-flex align-items-center">
+          <form class="form-inline row align-items-center">
+            <div class="login col-6">
+              <input id="buttons-header" type="text" placeholder="Comprar">
+              <div class="input-group-prepend">
+                <i class="fas fa-shopping-basket" style="color: white; font-size: 30px; margin-top: 3px;"></i>
+              </div>
             </div>
+            <div class="login col-6">
+              <button id="buttons-header" placeholder="Iniciar Sesión" type="text" data-toggle="modal"
+                data-target="#loginOne">
+                <div class="input-group-prepend">
+                  <i class="fas fa-user" style="color: white; font-size: 30px; margin-top: 3px; font-weight: 100;"></i>
+                </div>
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="loginOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header justify-content-center">
 
-             
-              <!-- Modal -->
-              <div class="modal fade" id="modalLeft" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header justify-content-center">
-                      <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-                      
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <i class="fas fa-user"></i>
-                        <form>
-                            <input type="text" placeholder="Nombre">
-                            <input type="text" placeholder="Apellido">
-                            <input type="text" placeholder="Fecha de nacimiento">
-                            <input type="text" placeholder="Direccion">
-                            <input type="text" placeholder="Numero de contacto">
-                            <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Contraseña">
-                            <button type="submit" value="send" class="enviar">Enviar</button>
-                        </form>
-                        
-                    </div>
-                    <!-- <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button> 
-                    </div> -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <i class="fas fa-user"></i>
+                    <form>
+                      <input type="text" placeholder="nombre">
+                      <input type="text" placeholder="nombre">
+                      <input type="text" placeholder="nombre">
+                      <input type="text" placeholder="nombre">
+                      <input type="text" placeholder="nombre">
+                      <input type="text" placeholder="nombre">
+                      <input type="text" placeholder="nombre">
+                      <button type="submit" value="send" class="enviar">Enviar</button>
+                    </form>
                   </div>
                 </div>
               </div>
+            </div>
             <!--END modal category left-->
+          </form>
+        </div>
+        <div class="col-2 nav-item dropdown align-items-right">
+          <a class="nav-link dropdown-toggle ml-5" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-bars" style="font-size: 30px;"></i>
+          </a>
+          <div class="dropdown-menu mt-3 menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Pasteleria</a>
+            <a class="dropdown-item" href="#">Panaderia</a>
+            <a class="dropdown-item" href="#">Cereales</a>
+          </div>
+        </div>
 
 
-            <div class="col-3 borde">
-                <img src="./img/1.jpg" width="100%" data-toggle="modal" data-target="#modalCenter">
+      </div>
+
+    </header>
+  </div>
+  <!-- fin  menu de pagina -->
+
+
+  <!--contenedor categorias-->
+  <div class="container">
+
+    <div class="row justify-content-center">
+      <!--modal category left-->
+      <div class="col-3 borde">
+        <img src="./img/3.jpg" width="100%" data-toggle="modal" data-target="#modalLeft">
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="modalLeft" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <!--modal category CENTER-->
-              <!-- Modal -->
-              <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalLabel">PASTELERIA</h4>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <!--POP UP DE PRODUCTO PASTELERIA-->
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-4"><img src="./img/cheescake.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/torta de fresa.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/tiramisu.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4"><img src="./img/torta de chocolate.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/sacher.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/tarta de chocolate.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4"></div><img src="./img/pasion baileys.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-                            <div class="col-4"></div><img src="./img/mouse frutos rojos.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-                            <div class="col-4"></div><img src="./img/mouse chocolate.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-                        </div> 
-                        <div class="row">
-                            <div class="col-4"><img src="./img/milkylato.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/manena.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/merenguita.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-                        </div> 
-                    </div>
+            <div class="modal-body">
+              <i class="fas fa-user"></i>
+              <form>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <input type="text" placeholder="Fecha de nacimiento">
+                <input type="text" placeholder="Direccion">
+                <input type="text" placeholder="Numero de contacto">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Contraseña">
+                <button type="submit" value="send" class="enviar">Enviar</button>
+              </form>
+
+            </div>
+            <!-- <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button> 
+                    </div> -->
+          </div>
+        </div>
+      </div>
+      <!--END modal category left-->
+
+
+      <div class="col-3 borde">
+        <img src="./img/1.jpg" width="100%" data-toggle="modal" data-target="#modalCenter">
+      </div>
+      <!--modal category CENTER-->
+      <!-- Modal -->
+      <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">PASTELERIA</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!--POP UP DE PRODUCTO PASTELERIA-->
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-4"><img src="./img/cheescake.jpg" width="100%">
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
                 </div>
-                    <!--POP UP DE PRODUCTO PASTELERIA-->
-                    <div class="modal-footer">
-                      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="col-4"><img src="./img/torta de fresa.jpg" width="100%">
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img src="./img/tiramisu.jpg" width="100%">
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+              
+              <div class="row">
+                <div class="col-4"><img src="./img/torta de chocolate.jpg" width="100%">
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img src="./img/sacher.jpg" width="100%">
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img src="./img/tarta de chocolate.jpg" width="100%">
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4"><img src="./img/pasion baileys.jpg" width="100%">
+                <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+              </div>
+              <div class="col-4"><img src="./img/mouse frutos rojos.jpg" width="100%">
+              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+            </div>
+            <div class="col-4"><img src="./img/mouse chocolate.jpg" width="100%">
+            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+          
+        </div>
+        <div class="row">
+          <div class="col-4"><img src="./img/milkylato.jpg" width="100%">
+            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+          </div>
+          <div class="col-4"><img src="./img/manena.jpg" width="100%">
+            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+          </div>
+          <div class="col-4"><img src="./img/merenguita.jpg" width="100%">
+            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--POP UP DE PRODUCTO PASTELERIA-->
+  <div class="modal-footer">
+    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                       <button type="button" class="btn btn-primary">Save changes</button> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!--END modal category CENTER-->
-            
-            <div class="col-3 borde">
-                <img src="./img/2.jpg" width="100%" data-toggle="modal" data-target="#modalRight">
+  </div>
+  </div>
+  </div>
+  </div>
+  <!--END modal category CENTER-->
+
+  <div class="col-3 borde">
+    <img src="./img/2.jpg" width="100%" data-toggle="modal" data-target="#modalRight">
+  </div>
+  <!--modal category RIGHT-->
+  <!-- Modal -->
+  <div class="modal fade" id="modalRight" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">CEREALES</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--POP UP DE PRODUCTO CEREALES-->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-4"><img src="./img/cheescake.jpg" width="100%">
+              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
             </div>
-            <!--modal category RIGHT-->
-              <!-- Modal -->
-              <div class="modal fade" id="modalRight" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalLabel">CEREALES</h4>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <!--POP UP DE PRODUCTO CEREALES-->
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-4"><img src="./img/cheescake.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/torta de fresa.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/tiramisu.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4"><img src="./img/torta de chocolate.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/sacher.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/tarta de chocolate.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4"></div><img src="./img/pasion baileys.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-                            <div class="col-4"></div><img src="./img/mouse frutos rojos.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-                            <div class="col-4"></div><img src="./img/mouse chocolate.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-                        </div> 
-                        <div class="row">
-                            <div class="col-4"><img src="./img/milkylato.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/manena.jpg" width="100%"><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-                            <div class="col-4"><img src="./img/merenguita.jpg" width="100%" ><p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-                        </div> 
-                    </div>
-                </div>
-                    <!--POP UP DE PRODUCTO CEREALES-->
-                    <div class="modal-footer">
-                      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <div class="col-4"><img src="./img/torta de fresa.jpg" width="100%">
+              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+            </div>
+            <div class="col-4"><img src="./img/tiramisu.jpg" width="100%">
+              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4"><img src="./img/torta de chocolate.jpg" width="100%">
+              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+            </div>
+            <div class="col-4"><img src="./img/sacher.jpg" width="100%">
+              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+            </div>
+            <div class="col-4"><img src="./img/tarta de chocolate.jpg" width="100%">
+              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4"><img src="./img/pasion baileys.jpg" width="100%">
+            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
+            <div class="col-4"><img src="./img/mouse frutos rojos.jpg" width="100%">
+            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
+            <div class="col-4"><img src="./img/mouse chocolate.jpg" width="100%">
+            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
+          </div>
+          <div class="row">
+            <div class="col-4"><img src="./img/milkylato.jpg" width="100%">
+              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+            </div>
+            <div class="col-4"><img src="./img/manena.jpg" width="100%">
+              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+            </div>
+            <div class="col-4"><img src="./img/merenguita.jpg" width="100%">
+              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+            </div>
+          </div>
+        </div>
+        <!--POP UP DE PRODUCTO CEREALES-->
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                       <button type="button" class="btn btn-primary">Save changes</button> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!--END modal category RIGHT-->
         </div>
+      </div>
     </div>
-    <!--fin contenedor categorias-->
+  </div>
+  <!--END modal category RIGHT-->
+  </div>
+  </div>
+  <!--fin contenedor categorias-->
 
 
 
-    <!---contenedor banners-->
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-10 borde">  
-                    <img  src="./img/panaderia.jpg" width="100%">
-            </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-5 borde">
-                <img src="./img/pasteleria.jpg" width="100%">
-            </div>
-            <div class="col-5 borde"> 
-                <img src="./img/cereales.jpg" width="100%">
-            </div>
-        </div>
+  <!---contenedor banners-->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10 borde">
+        <img src="./img/panaderia.jpg" width="100%">
+      </div>
     </div>
-    <!--fin banners-->
-
-
-    <!-- contenedor de logos -->
-
-    <div class="container-fluid p-5 brands" >
-        <div class="row justify-content-center">
-            <div class="col-1">
-                <img class="rounded-circle" src="./img/deli.jpg" width="100%" data-toggle="modal"data-target="#modalleftBRANDS">
-            </div>
-
-             <!-- Modal -->
-             <div class="modal fade" id="modalleftBRANDS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header justify-content-center">
-                      <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-                      
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body1"><img class="rounded-circle" src="./img/deli.jpg">
-                        <p>
-                            “Deli es la combinación perfecta para encontrar en el placer de la repostería y panadería una deliciosa opción”
-                             Somos una repostería con más de 30 años en el mercado transformando los mejores ingredientes en momentos especiales. </br>
-                             Creamos sabores auténticos plasmados en productos de repostería, galletería y panadería caracterizados por la naturalidad y calidad pero sobre todo por nuestras técnicas que combinan lo artesanal con la tradición y la innovación. 
-                             La combinación perfecta para encontrar en el placer de la repostería y panadería una deliciosa opción. </br>
-                             Nuestra experiencia, el compromiso con la calidad y la atención de nuestro gran equipo humano nos han permitido entregar la más acertada asesoría para las necesidades 
-                             que surgen en cada uno de los servicios brindados dentro de nuestro portafolio, convirtiéndolos así en momentos especiales.
-                             Actualmente contamos con 50 puntos de venta en Bogotá y Medellín y una tienda virtual, caracterizados por ser ambientes cálidos y acogedores llenos de sabor y tradición. 
-                             Además de un completo servicio institucional con el fin de satisfacer las necesidades y requerimientos corporativos.
-                        </p>
-                    </div>
-                    <!-- <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button> 
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            <!--END modal category brands-->
-
-            <div class="col-1">
-                <img class="rounded-circle" src="./img/bagatelle.jpg" width="100%" data-toggle="modal"data-target="#modalleftBRANDS1">
-            </div>
-             <!-- Modal -->
-             <div class="modal fade" id="modalleftBRANDS1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header justify-content-center">
-                      <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-                      
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body1"><img class="rounded-circle" src="./img/bagatelle.jpg">
-                        <p>
-                        Bagatelle se une a este movimiento global que lucha contra un estilo de vida marcado por el afán y la permanente falta de tiempo, 
-                        que lleva a la estandarización de la comida y empuja a las personas a buscar en su alimentación rapidez antes que calidad. 
-                        Con el fin de mejorar nuestra calidad de vida, Bagatelle promueve esta nueva filosofía que combina placer y conocimento e invita a sus clientes a hacer una pausa en su día a día, 
-                        liberarse del afán y disfrutar de un plato casero preparado a la minuta con los mejores y más frescos ingredientes.
-                        El olor del pan recién horneado, las búrbujas de un mousse deshaciéndose en la boca, la textura de una mesa de roble finamente lijado, 
-                        el encuentro con un amigo de infancia, la sonrisa de un niño o el calor de una chimenea.
-                        Y si hay un lugar en el mundo en el que se pueden vivir, disfrutar y compartir es en Bagatelle, donde los pequeños placeres se hacen grandes.
-                        </p>
-                    </div>
-                    <!-- <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button> 
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            <!--END modal Brands-->
-
-            <div class="col-1">
-                <img class="rounded-circle" src="./img/carulla.jpg" width="100%" data-toggle="modal"data-target="#modalleftBRANDS2">
-            </div>
-             <!-- Modal -->
-             <div class="modal fade" id="modalleftBRANDS2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header justify-content-center">
-                      <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-                      
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body1"><img class="rounded-circle" src="./img/carulla.jpg">
-                        <p>
-
-                        </p>
-                    </div>
-                    <!-- <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button> 
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            <!--END modal Brands-->
-            
-            <div class="col-1">
-                <img class="rounded-circle" src="./img/hornitos.jpg" width="100%"data-toggle="modal"data-target="#modalleftBRANDS3">
-            </div>
-             <!-- Modal -->
-             <div class="modal fade" id="modalleftBRANDS3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header justify-content-center">
-                      <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-                      
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body1"><img class="rounded-circle" src="./img/hornitos.jpg">
-                        <p>
-                            Hornitos es una empresa de familia de expertos panaderos y pasteleros Colombianos, fundada en 1980.
-                            A través de los años hemos construido con nuestras manos más de 117 variedades de pan, 
-                            12 líneas diferentes de pastelerías y más de 60 platos a la carta.
-                            Contamos con nueve puntos de venta en la ciudad de Bogotá.
-                            En nuestros puntos de venta se vive el placer de encontrar un producto hecho para ti en medio de tanta variedad. 
-                            El aroma de las mejores recetas llenas de bienestar y la calidez en nuestro servicio te harán vivir lo que es una empresa familiar.
-                            Con el correr de los años, Hornitos fue dando oportunidad a los integrantes de la familia de nuestro fundador, hermanos, 
-                            sobrinos y primos fueron consolidando la fuerza de trabajo cada uno aportando lo mejor de sí para la construcción de la mejor panadería. 
-                            Nuestro valor de familiaridad toma importancia desde nuestro origen
-                        </p>
-                    </div>
-                    <!-- <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button> 
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            <!--END modal Brands-->
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-1">
-                <img class="rounded-circle" src="./img/santa elena.jpg" width="100%"data-toggle="modal"data-target="#modalleftBRANDS4">
-            </div>
-             <!-- Modal -->
-             <div class="modal fade" id="modalleftBRANDS4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header justify-content-center">
-                      <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-                      
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body1"><img class="rounded-circle" src="./img/santa elena.jpg">
-                        <p>
-                            Producimos y comercializamos alimentos de excelente calidad, por eso día a día nos fortalecemos como una 
-                            compañía con experiencia que constantemente está innovando sin dejar de lado la tradición llena de sabor. es deleitar con cariño y calidez.
-                            La excelente calidad de nuestros productos, un servicio oportuno y eficiente, 
-                            han posicionado este canal en la venta de productos al por mayor para clientes empresariales, 
-                            centros de convenciones, entidades gubernamentales, casinos, universidades, clínicas, entre otros.
-                            es ser líderes en innovación y desarrollo de productos de pastelería con calidez y personal altamente calificado, comprometidos en deleitar a nuestros clientes.
-                        </p>
-                    </div>
-                    <!-- <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button> 
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            <!--END modal Brands-->
-
-            <div class="col-1">
-                <img class="rounded-circle" src="./img/nicolukas.jpg" width="100%">
-            </div>
-            <div class="col-1">
-                <img class="rounded-circle" src="./img/panpaya.jpg" width="100%">
-            </div>
-            <div class="col-1">
-                <img class="rounded-circle" src="./img/yanuba.jpg" width="100%">
-            </div>
-        </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-5 borde">
+        <img src="./img/pasteleria.jpg" width="100%">
+      </div>
+      <div class="col-5 borde">
+        <img src="./img/cereales.jpg" width="100%">
+      </div>
     </div>
-    <!-- fin contenedor de logos -->
-    <!-- inicio footer -->
-<footer>
+  </div>
+  <!--fin banners-->
+
+
+  <!-- contenedor de logos -->
+
+  <div class="container-fluid p-5 brands">
+    <div class="row justify-content-center">
+      <div class="col-1">
+        <img class="rounded-circle" src="./img/deli.jpg" width="100%" data-toggle="modal"
+          data-target="#modalleftBRANDS">
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modalleftBRANDS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body1"><img class="rounded-circle" src="./img/deli.jpg">
+              <p>
+                “Deli es la combinación perfecta para encontrar en el placer de la repostería y panadería una deliciosa
+                opción”
+                Somos una repostería con más de 30 años en el mercado transformando los mejores ingredientes en momentos
+                especiales. </br>
+                Creamos sabores auténticos plasmados en productos de repostería, galletería y panadería caracterizados
+                por la naturalidad y calidad pero sobre todo por nuestras técnicas que combinan lo artesanal con la
+                tradición y la innovación.
+                La combinación perfecta para encontrar en el placer de la repostería y panadería una deliciosa opción.
+                </br>
+                Nuestra experiencia, el compromiso con la calidad y la atención de nuestro gran equipo humano nos han
+                permitido entregar la más acertada asesoría para las necesidades
+                que surgen en cada uno de los servicios brindados dentro de nuestro portafolio, convirtiéndolos así en
+                momentos especiales.
+                Actualmente contamos con 50 puntos de venta en Bogotá y Medellín y una tienda virtual, caracterizados
+                por ser ambientes cálidos y acogedores llenos de sabor y tradición.
+                Además de un completo servicio institucional con el fin de satisfacer las necesidades y requerimientos
+                corporativos.
+              </p>
+            </div>
+            <!-- <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button> 
+                    </div> -->
+          </div>
+        </div>
+      </div>
+      <!--END modal category brands-->
+
+      <div class="col-1">
+        <img class="rounded-circle" src="./img/bagatelle.jpg" width="100%" data-toggle="modal"
+          data-target="#modalleftBRANDS1">
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="modalleftBRANDS1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body1"><img class="rounded-circle" src="./img/bagatelle.jpg">
+              <p>
+                Bagatelle se une a este movimiento global que lucha contra un estilo de vida marcado por el afán y la
+                permanente falta de tiempo,
+                que lleva a la estandarización de la comida y empuja a las personas a buscar en su alimentación rapidez
+                antes que calidad.
+                Con el fin de mejorar nuestra calidad de vida, Bagatelle promueve esta nueva filosofía que combina
+                placer y conocimento e invita a sus clientes a hacer una pausa en su día a día,
+                liberarse del afán y disfrutar de un plato casero preparado a la minuta con los mejores y más frescos
+                ingredientes.
+                El olor del pan recién horneado, las búrbujas de un mousse deshaciéndose en la boca, la textura de una
+                mesa de roble finamente lijado,
+                el encuentro con un amigo de infancia, la sonrisa de un niño o el calor de una chimenea.
+                Y si hay un lugar en el mundo en el que se pueden vivir, disfrutar y compartir es en Bagatelle, donde
+                los pequeños placeres se hacen grandes.
+              </p>
+            </div>
+            <!-- <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button> 
+                    </div> -->
+          </div>
+        </div>
+      </div>
+      <!--END modal Brands-->
+
+      <div class="col-1">
+        <img class="rounded-circle" src="./img/carulla.jpg" width="100%" data-toggle="modal"
+          data-target="#modalleftBRANDS2">
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="modalleftBRANDS2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body1"><img class="rounded-circle" src="./img/carulla.jpg">
+              <p>
+
+              </p>
+            </div>
+            <!-- <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button> 
+                    </div> -->
+          </div>
+        </div>
+      </div>
+      <!--END modal Brands-->
+
+      <div class="col-1">
+        <img class="rounded-circle" src="./img/hornitos.jpg" width="100%" data-toggle="modal"
+          data-target="#modalleftBRANDS3">
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="modalleftBRANDS3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body1"><img class="rounded-circle" src="./img/hornitos.jpg">
+              <p>
+                Hornitos es una empresa de familia de expertos panaderos y pasteleros Colombianos, fundada en 1980.
+                A través de los años hemos construido con nuestras manos más de 117 variedades de pan,
+                12 líneas diferentes de pastelerías y más de 60 platos a la carta.
+                Contamos con nueve puntos de venta en la ciudad de Bogotá.
+                En nuestros puntos de venta se vive el placer de encontrar un producto hecho para ti en medio de tanta
+                variedad.
+                El aroma de las mejores recetas llenas de bienestar y la calidez en nuestro servicio te harán vivir lo
+                que es una empresa familiar.
+                Con el correr de los años, Hornitos fue dando oportunidad a los integrantes de la familia de nuestro
+                fundador, hermanos,
+                sobrinos y primos fueron consolidando la fuerza de trabajo cada uno aportando lo mejor de sí para la
+                construcción de la mejor panadería.
+                Nuestro valor de familiaridad toma importancia desde nuestro origen
+              </p>
+            </div>
+            <!-- <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button> 
+                    </div> -->
+          </div>
+        </div>
+      </div>
+      <!--END modal Brands-->
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-1">
+        <img class="rounded-circle" src="./img/santa elena.jpg" width="100%" data-toggle="modal"
+          data-target="#modalleftBRANDS4">
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="modalleftBRANDS4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body1"><img class="rounded-circle" src="./img/santa elena.jpg">
+              <p>
+                Producimos y comercializamos alimentos de excelente calidad, por eso día a día nos fortalecemos como una
+                compañía con experiencia que constantemente está innovando sin dejar de lado la tradición llena de
+                sabor. es deleitar con cariño y calidez.
+                La excelente calidad de nuestros productos, un servicio oportuno y eficiente,
+                han posicionado este canal en la venta de productos al por mayor para clientes empresariales,
+                centros de convenciones, entidades gubernamentales, casinos, universidades, clínicas, entre otros.
+                es ser líderes en innovación y desarrollo de productos de pastelería con calidez y personal altamente
+                calificado, comprometidos en deleitar a nuestros clientes.
+              </p>
+            </div>
+            <!-- <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button> 
+                    </div> -->
+          </div>
+        </div>
+      </div>
+      <!--END modal Brands-->
+
+      <div class="col-1">
+        <img class="rounded-circle" src="./img/nicolukas.jpg" width="100%">
+      </div>
+      <div class="col-1">
+        <img class="rounded-circle" src="./img/panpaya.jpg" width="100%">
+      </div>
+      <div class="col-1">
+        <img class="rounded-circle" src="./img/yanuba.jpg" width="100%">
+      </div>
+    </div>
+  </div>
+  <!-- fin contenedor de logos -->
+  <!-- inicio footer -->
+  <footer>
     <div class="container-fluid">
-        <div class="row after-footer justify-content-center p-2">
-            <div class="col-3"><h4>Suscripción a Newsletter</h4></div>
-            <div class="col-3">
-                <form class="suscripcion d-flex align-items-center">
-                <input type="text"placeholder="ingrese su e-mail">
-                <button type="submit" value="send"> <i class="fas fa-arrow-circle-right"></i></button>
-            </form></div>
+      <div class="row after-footer justify-content-center p-2">
+        <div class="col-3">
+          <h4>Suscripción a Newsletter</h4>
         </div>
+        <div class="col-3">
+          <form class="suscripcion d-flex align-items-center">
+            <input type="text" placeholder="ingrese su e-mail">
+            <button type="submit" value="send"> <i class="fas fa-arrow-circle-right"></i></button>
+          </form>
+        </div>
+      </div>
     </div>
     <div class="container-fluid">
-        <div class="row justify-content-center p-5">
-            <div class="col-2">
-                <h6>Centro de ayuda                </h6>
-                <ul class="mt-5">
-                    <li>Preguntas frecuentes</li>
-                    <li>Políticas de devolución</li>
-                    <li>Contacto</li>
-                </ul>
-            </div>
-            <div class="col-2">
-                <h6> Informacion de interes                </h6>
-                <ul class="mt-5">
-                    <li>Quienes somos</li>
-                    <li>Mision, Vision</li>
-                    <li>Compra</li>
-                </ul>
-            </div>
-            <div class="col-2">
-                <h6>Informacion legal                </h6>
-                <ul class="mt-5">
-                    <li>Terminos y condiciones</li>
-                    <li>Políticas de devolución</li>
-                    <li>Legales</li>
-                </ul>
-            </div>
+      <div class="row justify-content-center p-5">
+        <div class="col-2">
+          <h6>Centro de ayuda </h6>
+          <ul class="mt-5">
+            <li>Preguntas frecuentes</li>
+            <li>Políticas de devolución</li>
+            <li>Contacto</li>
+          </ul>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <p class="copy-right">
-                    2020 TiendaOnline   marca registrada todos los derechos reservados 
-                </p>
-            </div>
-            <div class="col-2 p-2">
-                <div class="social">
-                    <div class="row">
-                        <div class="col-3"><i class="fab fa-facebook"></i></div>
-                        <div class="col-3"><i class="fab fa-instagram"></i></div>
-                        <div class="col-3"><i class="fab fa-twitter-square"></i></div>
-                    </div>
-                    
-                </div>
+        <div class="col-2">
+          <h6> Informacion de interes </h6>
+          <ul class="mt-5">
+            <li>Quienes somos</li>
+            <li>Mision, Vision</li>
+            <li>Compra</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h6>Informacion legal </h6>
+          <ul class="mt-5">
+            <li>Terminos y condiciones</li>
+            <li>Políticas de devolución</li>
+            <li>Legales</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <p class="copy-right">
+            2020 TiendaOnline marca registrada todos los derechos reservados
+          </p>
+        </div>
+        <div class="col-2 p-2">
+          <div class="social">
+            <div class="row">
+              <div class="col-3"><i class="fab fa-facebook"></i></div>
+              <div class="col-3"><i class="fab fa-instagram"></i></div>
+              <div class="col-3"><i class="fab fa-twitter-square"></i></div>
             </div>
 
+          </div>
         </div>
+
+      </div>
     </div>
-    </footer>
+  </footer>
 
-    <!-- fin footer -->
-
-
+  <!-- fin footer -->
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
