@@ -261,9 +261,9 @@ a #right{
     background-size: cover;  
     padding: 5% 5%;
 }
-.modal-backdrop{
+  .modal-backdrop{
     position: inherit !important;
-}
+} 
 .modal-header {
     text-align: center;
 }
