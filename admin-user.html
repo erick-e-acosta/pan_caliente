@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./icons/css/all.css" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script src="../pan_caliente/js/test.js"></script>
 </head>
 
 <body>
@@ -44,8 +46,8 @@
                 </div>
 
               </div>
-              
-              
+
+
             </button>
           </div>
         </div>
@@ -71,58 +73,135 @@
   </div>
   <!-- fin  menu de pagina -->
   <div class="container">
-      <div class="row">
-          <aside class="col-4">
-            <div id="menuAdmin">
-                <ul>
-                 <li><a href="#" title="...">Productos</a></li>
-                 <li><a href="#" title="...">Promociones</a></li>
-                 <li><a href="#" title="...">Aliados</a></li>
-                 <li><a href="#" title="...">Legales</a></li>
-                </ul>
-            </div>
-          </aside>
-          <section class="col-8">
-            <table class="table">
-                <thead class="thead-brown">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">User-Role</th>
-                    <th scope="col">Section-edit</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>@admin</td>
-                    <td>modal-panaderia</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>@admin</td>
-                    <td><img src="./img/pan blanco.jpg" style="width: 80px; height: auto;"> </td>
-                    <td> <input type="file"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>@admin</td>
-                    <td><img src="./img/pan boyacense.jpg" style="width: 80px; height: auto;"> </td>
-                    <td> <input type="file"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>@admin</td>
-                    <td><img src="./img/pan con queso.jpg" style="width: 80px; height: auto;"> </td>
-                    <td> <input type="file"></td>
-                  </tr>
-                </tbody>
-            </table>
-          </section>
+    <div class="row">
+      <aside class="col-4">
+        <div id="menuAdmin">
+          <ul>
+            <li><a id="productos" href="#" >Productos</a> </li>
+            <li><a id="promociones" href="#" title="...">Promociones</a> </li>
+            <li><a id="aliados" href="#" title="...">Aliados</a></li>
+          </ul>
+        </div>
+      </aside>
+      <section class="col-8">
+        <table class="table">
+          <thead class="thead-brown">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">User-Role</th>
+              <th scope="col">Section-edit</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody id='productos2'>
+            <tr>
+              <th scope="row">1</th>
+              <td>@admin</td>
+              <td>modal-panaderia</td>
+              <td>@mdo</td>
+            </tr>
+            <tr >
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/pan blanco.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/pan boyacense.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/pan con queso.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+          </tbody>
+          <tbody id='promociones2'>
+            <tr>
+              <th scope="row">1</th>
+              <td>@admin</td>
+              <td>modal-promociones</td>
+              <td>@mdo</td>
+            </tr>
+            <tr >
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/panaderia.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/pasteleria.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/cereales.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+          </tbody>
+          <tbody id='aliados2'>
+            <tr>
+              <th scope="row">1</th>
+              <td>@admin</td>
+              <td>modal-aliados</td>
+              <td>@mdo</td>
+            </tr>
+            <tr >
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/deli.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/bagatelle.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/carulla.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
 
-      </div>
-    
+
+            <tr>
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/hornitos.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+            <tr >
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/santa elena.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/nicolukas.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>@admin</td>
+              <td><img src="./img/panpaya.jpg" style="width: 80px; height: auto;"> </td>
+              <td> <input type="file"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+
   </div>
   <!-- inicio footer -->
   <footer>
@@ -199,40 +278,41 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 
-</body>
 
 
-<div class="modal fade" id="loginOne" tabindex="-10" role="dialog" aria-labelledby="exampleModalLabel1"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel1">PASTELERIA</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <!--POP UP DE PRODUCTO PASTELERIA-->
-      <div class="modal-body">
-        <i class="fas fa-user"></i>
-        <form>
-          <input type="text" placeholder="nombre">
-          <input type="text" placeholder="nombre">
-          <input type="text" placeholder="nombre">
-          <input type="text" placeholder="nombre">
-          <input type="text" placeholder="nombre">
-          <input type="text" placeholder="nombre">
-          <input type="text" placeholder="nombre">
-          <button type="submit" value="send" class="enviar">Enviar</button>
-        </form>
+  <div class="modal fade" id="loginOne" tabindex="-10" role="dialog" aria-labelledby="exampleModalLabel1"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel1">PASTELERIA</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--POP UP DE PRODUCTO PASTELERIA-->
+        <div class="modal-body">
+          <i class="fas fa-user"></i>
+          <form>
+            <input type="text" placeholder="nombre">
+            <input type="text" placeholder="nombre">
+            <input type="text" placeholder="nombre">
+            <input type="text" placeholder="nombre">
+            <input type="text" placeholder="nombre">
+            <input type="text" placeholder="nombre">
+            <input type="text" placeholder="nombre">
+            <button type="submit" value="send" class="enviar">Enviar</button>
+          </form>
 
-      </div>
-      <div class="modal-footer">
+        </div>
+        <div class="modal-footer">
 
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+  
+</body>
 
 </html>

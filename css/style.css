@@ -5,7 +5,9 @@
 *{
    scroll-behavior: smooth; 
 }
-
+.hide{
+    display:none;
+}
 
 .borde{
 padding: 0;
@@ -160,7 +162,6 @@ body{
     background-size: 300px;
 }
 .brands{
-    background-color: whitesmoke 0.5;
     background-image:url("../img/fondo-aliados.jpg");
     background-attachment: fixed;
     background-size: cover;
