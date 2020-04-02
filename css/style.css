@@ -242,11 +242,7 @@ a #right{
 
 /*final menu puto*/
 
-.login i{
-    position: relative;
-    right: -50px;
-    top: 5px;
-}
+
 .login{
     margin-left:1%;
     color:white;
@@ -267,14 +263,14 @@ a #right{
 .modal-header {
     text-align: center;
 }
-.modal-body > i {
+.modal-body > div > i {
     
     font-size: 40px;
     padding: 2% 2.5%;
     border-radius: 50%;
     color:rgba(136, 112, 85, 1);
     border:2px solid rgba(136, 112, 85, 1);
-    margin-left: 39%;
+
 }
 .modal-body input{
     border:2px solid rgba(136, 112, 85, 1);
