@@ -15,59 +15,56 @@
   <!-- menu de pagina -->
   <div class="container-fluid principal">
     <header class="container p-3">
-
       <div class="row justify-content-center">
         <div class="col-2">
           <div class="brand">
-
           </div>
         </div>
         <div class="col-5 d-flex align-items-center">
-          <form class="form-inline row align-items-center">
-            <div class="login col-6">
-              <input id="buttons-header" type="text" placeholder="Comprar">
-              <div class="input-group-prepend">
-                <i class="fas fa-shopping-basket" style="color: white; font-size: 30px; margin-top: 3px;"></i>
-              </div>
-            </div>
-            <div class="login col-6">
-              <button id="buttons-header" placeholder="Iniciar Sesión" type="text" data-toggle="modal"
-                data-target="#loginOne">
-                <div class="input-group-prepend">
-                  <i class="fas fa-user" style="color: white; font-size: 30px; margin-top: 3px; font-weight: 100;"></i>
-                </div>
-              </button>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="loginOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header justify-content-center">
-
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <i class="fas fa-user"></i>
-                    <form>
-                      <input type="text" placeholder="nombre">
-                      <input type="text" placeholder="nombre">
-                      <input type="text" placeholder="nombre">
-                      <input type="text" placeholder="nombre">
-                      <input type="text" placeholder="nombre">
-                      <input type="text" placeholder="nombre">
-                      <input type="text" placeholder="nombre">
-                      <button type="submit" value="send" class="enviar">Enviar</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--END modal category left-->
-          </form>
+          <div class="row col-12">
+            <button class="col-5 login">
+              compartir
+              <i class="fas fa-shopping-basket"></i>
+            </button>
+            <button class="col-5 login" data-toggle="modal" data-target="#loginOne">
+              Iniciar sesion
+              <i class="fas fa-user"></i>
+            </button>
+          </div>
         </div>
+          <!-- Modal -->
+      <div class="modal fade" id="loginOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel1">PASTELERIA</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!--POP UP DE PRODUCTO PASTELERIA-->
+          <div class="modal-body">
+            <i class="fas fa-user"></i>
+                  <form>
+                    <input type="text" placeholder="nombre">
+                    <input type="text" placeholder="nombre">
+                    <input type="text" placeholder="nombre">
+                    <input type="text" placeholder="nombre">
+                    <input type="text" placeholder="nombre">
+                    <input type="text" placeholder="nombre">
+                    <input type="text" placeholder="nombre">
+                    <button type="submit" value="send" class="enviar">Enviar</button>
+                  </form>
+            
+          </div>
+          <div class="modal-footer">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+        
         <div class="col-2 nav-item dropdown align-items-right">
           <a class="nav-link dropdown-toggle ml-5" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
@@ -96,41 +93,76 @@
       <div class="col-3 borde">
         <img src="./img/3.jpg" width="100%" data-toggle="modal" data-target="#modalLeft">
       </div>
-
-
+      <!--modal category CENTER-->
       <!-- Modal -->
-      <div class="modal fade" id="modalLeft" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      <div class="modal fade" id="modalLeft" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header justify-content-center">
-              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel2">PASTELERIA</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+            <!--POP UP DE PRODUCTO PASTELERIA-->
             <div class="modal-body">
-              <i class="fas fa-user"></i>
-              <form>
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <input type="text" placeholder="Fecha de nacimiento">
-                <input type="text" placeholder="Direccion">
-                <input type="text" placeholder="Numero de contacto">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Contraseña">
-                <button type="submit" value="send" class="enviar">Enviar</button>
-              </form>
+              <div class="row">
+                <div class="col-4"><img src="./img/torta de fresa.jpg" width="100%">
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img src="./img/torta de fresa.jpg" width="100%">
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img src="./img/tiramisu.jpg" width="100%">
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
 
+                <div class="row">
+                  <div class="col-4"><img src="./img/torta de chocolate.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                  </div>
+                  <div class="col-4"><img src="./img/sacher.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                  </div>
+                  <div class="col-4"><img src="./img/tarta de chocolate.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4"><img src="./img/pasion baileys.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                  </div>
+                  <div class="col-4"><img src="./img/mouse frutos rojos.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                  </div>
+                  <div class="col-4"><img src="./img/mouse chocolate.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-4"><img src="./img/milkylato.jpg" width="100%">
+                      <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                    </div>
+                    <div class="col-4"><img src="./img/manena.jpg" width="100%">
+                      <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                    </div>
+                    <div class="col-4"><img src="./img/merenguita.jpg" width="100%">
+                      <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button> 
-                    </div> -->
+            <!--POP UP DE PRODUCTO PASTELERIA-->
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
           </div>
         </div>
       </div>
+      <!--END modal category CENTER-->
       <!--END modal category left-->
 
 
@@ -139,12 +171,12 @@
       </div>
       <!--modal category CENTER-->
       <!-- Modal -->
-      <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title" id="exampleModalLabel">PASTELERIA</h4>
+              <h4 class="modal-title" id="exampleModalLabel3">PASTELERIA</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -161,122 +193,125 @@
                 <div class="col-4"><img src="./img/tiramisu.jpg" width="100%">
                   <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
                 </div>
-              
-              <div class="row">
-                <div class="col-4"><img src="./img/torta de chocolate.jpg" width="100%">
-                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-                </div>
-                <div class="col-4"><img src="./img/sacher.jpg" width="100%">
-                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-                </div>
-                <div class="col-4"><img src="./img/tarta de chocolate.jpg" width="100%">
-                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4"><img src="./img/pasion baileys.jpg" width="100%">
-                <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-              </div>
-              <div class="col-4"><img src="./img/mouse frutos rojos.jpg" width="100%">
-              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-            </div>
-            <div class="col-4"><img src="./img/mouse chocolate.jpg" width="100%">
-            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-          
-        </div>
-        <div class="row">
-          <div class="col-4"><img src="./img/milkylato.jpg" width="100%">
-            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-          </div>
-          <div class="col-4"><img src="./img/manena.jpg" width="100%">
-            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-          </div>
-          <div class="col-4"><img src="./img/merenguita.jpg" width="100%">
-            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--POP UP DE PRODUCTO PASTELERIA-->
-  <div class="modal-footer">
-    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button> -->
-  </div>
-  </div>
-  </div>
-  </div>
-  <!--END modal category CENTER-->
 
-  <div class="col-3 borde">
-    <img src="./img/2.jpg" width="100%" data-toggle="modal" data-target="#modalRight">
-  </div>
-  <!--modal category RIGHT-->
-  <!-- Modal -->
-  <div class="modal fade" id="modalRight" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="exampleModalLabel">CEREALES</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <!--POP UP DE PRODUCTO CEREALES-->
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-4"><img src="./img/cheescake.jpg" width="100%">
-              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                <div class="row">
+                  <div class="col-4"><img src="./img/torta de chocolate.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                  </div>
+                  <div class="col-4"><img src="./img/sacher.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                  </div>
+                  <div class="col-4"><img src="./img/tarta de chocolate.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4"><img src="./img/pasion baileys.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                  </div>
+                  <div class="col-4"><img src="./img/mouse frutos rojos.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                  </div>
+                  <div class="col-4"><img src="./img/mouse chocolate.jpg" width="100%">
+                    <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-4"><img src="./img/milkylato.jpg" width="100%">
+                      <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                    </div>
+                    <div class="col-4"><img src="./img/manena.jpg" width="100%">
+                      <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                    </div>
+                    <div class="col-4"><img src="./img/merenguita.jpg" width="100%">
+                      <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-4"><img src="./img/torta de fresa.jpg" width="100%">
-              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-            </div>
-            <div class="col-4"><img src="./img/tiramisu.jpg" width="100%">
-              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-4"><img src="./img/torta de chocolate.jpg" width="100%">
-              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-            </div>
-            <div class="col-4"><img src="./img/sacher.jpg" width="100%">
-              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-            </div>
-            <div class="col-4"><img src="./img/tarta de chocolate.jpg" width="100%">
-              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-4"><img src="./img/pasion baileys.jpg" width="100%">
-            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-            <div class="col-4"><img src="./img/mouse frutos rojos.jpg" width="100%">
-            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-            <div class="col-4"><img src="./img/mouse chocolate.jpg" width="100%">
-            <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p></div>
-          </div>
-          <div class="row">
-            <div class="col-4"><img src="./img/milkylato.jpg" width="100%">
-              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-            </div>
-            <div class="col-4"><img src="./img/manena.jpg" width="100%">
-              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-            </div>
-            <div class="col-4"><img src="./img/merenguita.jpg" width="100%">
-              <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
-            </div>
-          </div>
-        </div>
-        <!--POP UP DE PRODUCTO CEREALES-->
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!--POP UP DE PRODUCTO PASTELERIA-->
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                       <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
         </div>
       </div>
+      <!--END modal category CENTER-->
+
+      <div class="col-3 borde">
+        <img src="./img/2.jpg" width="100%" data-toggle="modal" data-target="#modalRight">
+      </div>
+      <!--modal category RIGHT-->
+      <!-- Modal -->
+      <div class="modal fade" id="modalRight" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel4">CEREALES</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!--POP UP DE PRODUCTO CEREALES-->
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-4"><img class="pasteles" src="./img/cheescake.jpg" >
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img class="pasteles" src="./img/torta de fresa.jpg" >
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img class="pasteles" src="./img/tiramisu.jpg" >
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4"><img class="pasteles" src="./img/torta de chocolate.jpg" >
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img class="pasteles" src="./img/sacher.jpg">
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img class="pasteles" src="./img/tarta de chocolate.jpg" >
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4"><img class="pasteles" src="./img/pasion baileys.jpg" >
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img class="pasteles" src="./img/mouse frutos rojos.jpg" >
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img class="pasteles" src="./img/mouse chocolate.jpg" >
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4"><img class="pasteles" src="./img/milkylato.jpg" >
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img class="pasteles" src="./img/manena.jpg" >
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+                <div class="col-4"><img class="pasteles"src="./img/merenguita.jpg" >
+                  <p>AVENA</br>$4.850 X 350GR </br><i class="fas fa-shopping-cart"></i></p>
+                </div>
+              </div>
+            </div>
+            <!--POP UP DE PRODUCTO CEREALES-->
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END modal category RIGHT-->
     </div>
-  </div>
-  <!--END modal category RIGHT-->
-  </div>
   </div>
   <!--fin contenedor categorias-->
 
