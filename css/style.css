@@ -35,10 +35,10 @@ margin:0 2%;
     font-size: 40px;    
 } */
 .brand{
-    width: 50px !important;
-    height: 50px;
-    border-radius: 50%;
-    background-color: black;
+    width: 70px !important;
+    height: 70px;
+    padding: 2%;
+    background-color: white;
 }
 .pasteles {
     width: 200px;
@@ -80,20 +80,23 @@ input:focus {
 }
 .input-group-prepend .input-group-text{
     background-color: #4d3f2f!important;
-    color: white!important;
+    color: #685642!important;
 }
 input .form-control-plainttext{
-    color:white!important;
+    color:#685642!important;
     font-size: 14px;
 }
+button, .borde {
+    cursor: pointer;
+}
 
-::-webkit-input-placeholder { color: white!important; } 
+::-webkit-input-placeholder { color: #685642!important; font-weight: 900;} 
 
 /* sume este*/
 .col-6 input{
     background: #685642;
     
-    color: white; 
+    
 }
 /* sume este*/
 .col-6 input:focus{
@@ -142,6 +145,8 @@ a #right{
 }
 footer{
     background-color: #B7C68B;
+    position: relative;
+    bottom: 0px;
 }
 .social i{
     font-size:20px;
@@ -157,6 +162,7 @@ body{
 .brands{
     background-color: whitesmoke 0.5;
     background-image:url("../img/fondo-aliados.jpg");
+    background-attachment: fixed;
     background-size: cover;
     
 }
@@ -247,11 +253,7 @@ a #right{
 
 /*final menu puto*/
 
-.login i{
-    position: relative;
-    right: -50px;
-    top: 5px;
-}
+
 .login{
     margin-left:1%;
     color:white;
@@ -272,14 +274,14 @@ a #right{
 .modal-header {
     text-align: center;
 }
-.modal-body > i {
+.modal-body > div > i {
     
     font-size: 40px;
     padding: 2% 2.5%;
     border-radius: 50%;
     color:rgba(136, 112, 85, 1);
     border:2px solid rgba(136, 112, 85, 1);
-    margin-left: 39%;
+
 }
 .modal-body input{
     border:2px solid rgba(136, 112, 85, 1);
@@ -370,3 +372,80 @@ p .brands{
     border-left: 10px solid #333;
     color:white!important;
 }
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+  }
+  .number-input {
+    margin: 3rem;
+  }
+  .number-input button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+  }
+  .number-input button:before,
+  .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+  }
+  .number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  .number-input input[type=number] {
+    text-align: center;
+  }
+  
+  
+  .md-number-input.number-input {
+    border: 2px solid #ddd;
+    width: 11.8rem;
+  }
+  .md-number-input.number-input button {
+    outline: none;
+    width: 3rem;
+    height: 2rem;
+    padding-top: .8rem;
+  }
+  .md-number-input.number-input button.minus {
+    padding-left: 8px;
+  }
+  .md-number-input.number-input button.plus {
+    padding-left: 2px;
+  }
+  .md-number-input.number-input button:before,
+  .md-number-input.number-input button:after {
+    width: 1rem;
+    background-color: #212121;
+  }
+  .md-number-input.number-input input[type=number] {
+    max-width: 5rem;
+    padding: .5rem;
+    border: solid #ddd;
+    border-width: 0 2px;
+    font-size: 2rem;
+    height: 3rem;
+    font-weight: bold;
+    outline: none;
+  }
+  @media not all and (min-resolution:.001dpcm)
+  { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .number-input.md-number-input.safari_only button:before, 
+    .number-input.md-number-input.safari_only button:after {
+      margin-top: -.6rem;
+    }
+  }}
