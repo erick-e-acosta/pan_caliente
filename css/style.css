@@ -239,46 +239,13 @@ a #right{
     border-radius: 50%;
     color: rgba(136, 112, 85, 1);
     background: white;
-
 }
-/*POR SI ACASO*/
-.modal-body p{
-    margin-top:5%;
-}
-
-.modal-body .row{
-    display: inline-flex;
-    margin:20px;
-    margin-left:10%;
-}
-
-/*POR SI ACASO*/
-
-
-/*Categorias popo ups
-.col-20 img{
-    display: inline-block;
-    margin: 10px;
-    width: 200px auto;
-}
-.col-21 img{
-    display: inline-flex;
-    margin: 10px;
-}
-.col-22 img{
-    display: inline-flex;
-    margin: 10px;
-}
-.col-23 img{
-    display: inline-flex;
-    margin: 10px;
-}
-Categorias pop ups*/
-
 /*Texto de porductos*/
+
 .modal-body p{
     font-size:15px;
     text-align: center;
+    margin-top:5%;
 }
 .modal-body i{
     font-size:25px;
