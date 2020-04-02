@@ -155,11 +155,16 @@ body{
     background-size: 300px;
 }
 .brands{
-    background-color:white;
+    background-color: whitesmoke 0.5;
+    background-image:url("../img/fondo-aliados.jpg");
+    background-size: cover;
+    
 }
 /* sume este*/
 .brands img{
-    border: 0.9px solid grey;
+   
+    box-shadow: 0 0 20px whitesmoke;
+    
 }
 .suscripcion input{
     border:none;
