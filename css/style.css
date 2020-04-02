@@ -162,6 +162,7 @@ body{
 .brands{
     background-color: whitesmoke 0.5;
     background-image:url("../img/fondo-aliados.jpg");
+    background-attachment: fixed;
     background-size: cover;
     
 }
