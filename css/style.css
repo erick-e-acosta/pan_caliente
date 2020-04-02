@@ -182,6 +182,7 @@ body{
 .suscripcion input:hover, .suscripcion input:focus{
     background:#B7C68B;
     width: 85%;
+
 }
 
 ::-webkit-scrollbar {
@@ -260,6 +261,9 @@ a #right{
     background-size: cover;  
     padding: 5% 5%;
 }
+.modal-backdrop{
+    position: inherit !important;
+}
 .modal-header {
     text-align: center;
 }
@@ -280,7 +284,16 @@ a #right{
     margin:2% 0;
     background:none;
     text-align: center;
+    color:rgba(136, 112, 85, 1) !important;
+    font-weight: 900;
 
+}
+
+::placeholder { 
+    color: rgba(136, 112, 85, 1);
+    }
+.modal input:focus{
+    border:2px solid rgba(136, 112, 85, 1) !important;
 }
 .enviar{
     width: 100%;
