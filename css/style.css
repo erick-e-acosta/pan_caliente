@@ -328,3 +328,36 @@ p .brands{
     margin-left:40%;
 }
 /*Categorias POP up brands*/
+
+/* ADMIN SECTION*/
+
+.thead-brown{
+    background-color:#685642;
+    color:white;
+}
+#menuAdmin{
+    height: 150px!important;
+    border-radius: 10px;
+    color:white!important;
+    background: #685642;
+}
+#menuAdmin ul {
+    list-style-type: none;
+    padding: 15px;
+    width: 200px;
+    font-size: 15pt;
+    color:white!important;
+}
+#menuAdmin ul li {
+    color:white!important;
+
+}
+#menuAdmin ul li a {
+    color:white!important;
+    padding: 5px;
+}
+#menuAdmin ul li a:hover {
+    background: #685642;
+    border-left: 10px solid #333;
+    color:white!important;
+}

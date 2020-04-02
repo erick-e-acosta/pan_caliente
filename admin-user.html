@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="stylesheet" href="./icons/css/all.css" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- menu de pagina -->
+  <div class="container-fluid principal">
+    <header class="container p-3">
+      <div class="row justify-content-center">
+        <div class="col-2">
+          <div class="brand">
+          </div>
+        </div>
+        <div class="col-5 d-flex align-items-center">
+          <div class="row col-12">
+            <button class="col-5 login">
+              compartir
+              <i class="fas fa-shopping-basket"></i>
+            </button>
+            <button class="col-5 login" data-toggle="modal" data-target="#loginOne">
+              Iniciar sesion
+              <i class="fas fa-user"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Modal -->
+
+        <div class="col-2 nav-item dropdown align-items-right">
+          <a class="nav-link dropdown-toggle ml-5" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-bars" style="font-size: 30px;"></i>
+          </a>
+          <div class="dropdown-menu mt-3 menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Pasteleria</a>
+            <a class="dropdown-item" href="#">Panaderia</a>
+            <a class="dropdown-item" href="#">Cereales</a>
+          </div>
+        </div>
+
+
+      </div>
+
+    </header>
+  </div>
+  <!-- fin  menu de pagina -->
+  <div class="container">
+      <div class="row">
+          <aside class="col-4">
+            <div id="menuAdmin">
+                <ul>
+                 <li><a href="#" title="...">Home</a></li>
+                 <li><a href="#" title="...">Archivos</a></li>
+                 <li><a href="#" title="...">Enlaces</a></li>
+                 <li><a href="#" title="...">Acerca de</a></li>
+                </ul>
+            </div>
+          </aside>
+          <section class="col-8">
+            <table class="table">
+                <thead class="thead-brown">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">User-Role</th>
+                    <th scope="col">Section-edit</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>@admin</td>
+                    <td>modal-panaderia</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>@admin</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>@admin</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+            </table>
+          </section>
+
+      </div>
+    
+  </div>
+  <!-- inicio footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row after-footer justify-content-center p-2">
+        <div class="col-3">
+          <h4>Suscripción a Newsletter</h4>
+        </div>
+        <div class="col-3">
+          <form class="suscripcion d-flex align-items-center">
+            <input type="text" placeholder="ingrese su e-mail">
+            <button type="submit" value="send"> <i class="fas fa-arrow-circle-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center p-5">
+        <div class="col-2">
+          <h6>Centro de ayuda </h6>
+          <ul class="mt-5">
+            <li>Preguntas frecuentes</li>
+            <li>Políticas de devolución</li>
+            <li>Contacto</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h6> Informacion de interes </h6>
+          <ul class="mt-5">
+            <li>Quienes somos</li>
+            <li>Mision, Vision</li>
+            <li>Compra</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h6>Informacion legal </h6>
+          <ul class="mt-5">
+            <li>Terminos y condiciones</li>
+            <li>Políticas de devolución</li>
+            <li>Legales</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <p class="copy-right">
+            2020 TiendaOnline marca registrada todos los derechos reservados
+          </p>
+        </div>
+        <div class="col-2 p-2">
+          <div class="social">
+            <div class="row">
+              <div class="col-3"><i class="fab fa-facebook"></i></div>
+              <div class="col-3"><i class="fab fa-instagram"></i></div>
+              <div class="col-3"><i class="fab fa-twitter-square"></i></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- fin footer -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
+
+<div class="modal fade" id="loginOne" tabindex="-10" role="dialog" aria-labelledby="exampleModalLabel1"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel1">PASTELERIA</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--POP UP DE PRODUCTO PASTELERIA-->
+      <div class="modal-body">
+        <i class="fas fa-user"></i>
+        <form>
+          <input type="text" placeholder="nombre">
+          <input type="text" placeholder="nombre">
+          <input type="text" placeholder="nombre">
+          <input type="text" placeholder="nombre">
+          <input type="text" placeholder="nombre">
+          <input type="text" placeholder="nombre">
+          <input type="text" placeholder="nombre">
+          <button type="submit" value="send" class="enviar">Enviar</button>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</html>
